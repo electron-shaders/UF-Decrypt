@@ -28,7 +28,7 @@ jobs:
     - name: Build EXE & Move config.json
       run: |
         pyinstaller -F ./UF-Decrypt.py
-        mov ./config.json ./dist/config.json
+        mv ./config.json ./dist/config.json
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.1
       with:
