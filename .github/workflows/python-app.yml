@@ -12,7 +12,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -24,19 +24,13 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pyinstaller
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install -r requirements.txt
     - name: Build EXE & Move config.json
       run: |
         pyinstaller -F ./UF-Decrypt.py
         mv ./config.json ./dist/config.json
-    - name: Archive Release
-      uses: thedoctor0/zip-release@0.7.1
-      with:
-        type: 'zip'
-        filename: 'UF-Decrypt.zip'
-        directory: './dist'
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: Windows Build
-        path: dist/UF-Decrypt.zip
+        name: UF-Decrypt
+        path: dist/*
