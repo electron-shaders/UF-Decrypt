@@ -34,7 +34,7 @@ jobs:
       with:
         type: 'zip'
         filename: 'UF-Decrypt.zip'
-        path: './dist'
+        directory: './dist'
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
