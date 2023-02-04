@@ -131,17 +131,20 @@ def CCZBuffer2PNG(_pInBuff):
     
     # PVR->PNG
     print()
-    os.system("%s -ics sRGB -i %s -d %s" % (pvr_cli_path, ftmp_path, fout_path))
+    os.system('%s -ics sRGB -i "%s" -d "%s"' % (pvr_cli_path, ftmp_path, fout_path))
     os.remove(ftmp_path)
 
     if not os.path.exists(fout_path):
         print("\r[INFO] Detected PVR.CCZ archive. Inflating ==> %s ... FAILED" % os.path.basename(fout_path))
         pause_exit(message=
-'''[ERROR] Conversion of PVR->PNG failed:
+'''
+[ERROR] Conversion of PVR->PNG failed:
 \tFile path: %s
 \tPVRTexToolCLI.exe path: %s
 Please check if these paths are valid. (accessible, without space, etc.)
-The information above might be useful.
+The output from PVRTexToolCLI.exe above might be useful.
+
+Press any key to exit......
 '''
         % (fin_path, pvr_cli_path))
 
