@@ -1,0 +1,8 @@
+{
+    "PvrCliPath": ".\\PVRTexToolCLI.exe",
+    "flag": {
+        "isEnabledDeleteOrigFile": true,
+        "isEnabledDeletePVRFile": true,
+        "isEnabledRenameDecFile": true
+    }
+}
