@@ -5,14 +5,14 @@ This tool does what you suppose.
 ## Installation
 
 1. Download and install `PVRTexTool` from https://developer.imaginationtech.com/pvrtextool/. (You may need to register an account to proceed)
-2. Download the zip file from [releases](https://github.com/electron-shaders/UF-Decrypt/releases).
+2. Download the zip file from [releases](https://github.com/electron-shaders/UF-Decrypt/releases/latest).
 3. Unzip the zip file.
 4. That's it!
 
 ## Usage
 
 1. Configure the `config.json`, here's the template:
-```json
+```json5
 {
     "PvrCliPath": ".\\PVRTexToolCLI.exe",
     // Path to PVRTexToolCLI.exe
