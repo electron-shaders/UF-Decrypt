@@ -110,7 +110,7 @@ def decryptUF(_pInBuff, _pInSize):
         return _pOutSize
 
 def isCCZBuffer(_pInBuff, _pInSize):
-    return _pInSize >= 0xF and _pInBuff[0] == 67 and _pInBuff[1] == 67 and _pInBuff[2] == 90 and (_pInBuff[3] == 112) or (_pInBuff[3] == 33)
+    return _pInSize >= 0xF and _pInBuff[0] == 67 and _pInBuff[1] == 67 and _pInBuff[2] == 90 and (_pInBuff[3] == 112 or _pInBuff[3] == 33)
 
 def isGZipBuffer(_pInBuff, _pInSize):
     return _pInSize > 1 and _pInBuff[0] == 0x1F and _pInBuff[1] == 0x8B
