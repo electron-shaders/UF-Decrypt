@@ -1,6 +1,6 @@
 # UF-Decrypt
 
-This tool does what you suppose.
+This tool does what you suppose. Currently supports Windows ONLY.
 
 ## Installation
 
