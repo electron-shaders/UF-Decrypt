@@ -1,7 +1,8 @@
 # UF-Decrypt
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/electron-shaders/UF-Decrypt)
-![GitHub all releases](https://img.shields.io/github/downloads/electron-shaders/UF-Decrypt/total)
+[![GitHub latest release](https://img.shields.io/github/v/release/electron-shaders/UF-Decrypt)](https://github.com/electron-shaders/UF-Decrypt/releases/latest)
+[![GitHub total release downloads](https://img.shields.io/github/downloads/electron-shaders/UF-Decrypt/total)](https://github.com/electron-shaders/UF-Decrypt/releases)
+[![Github views per week](https://raw.githubusercontent.com/electron-shaders/electron-shaders.github.io/traffic/traffic-UF-Decrypt/views.svg)](https://github.com/electron-shaders/UF-Decrypt)
 
 This tool does what you suppose. Currently supports Windows ONLY.
 
